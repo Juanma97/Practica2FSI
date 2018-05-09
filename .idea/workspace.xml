@@ -15,8 +15,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/practica2$nn_mnist.coverage" NAME="nn_mnist Coverage Results" MODIFIED="1525867824345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/practica2$nn_iris.coverage" NAME="nn_iris Coverage Results" MODIFIED="1525794157246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/practica2$nn_mnist.coverage" NAME="nn_mnist Coverage Results" MODIFIED="1525868056961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/practica2$nn_iris.coverage" NAME="nn_iris Coverage Results" MODIFIED="1525868088113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -117,7 +117,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.nn_mnist">
+  <component name="RunManager" selected="Python.nn_iris">
     <configuration name="nn_iris" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="practica2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -162,8 +162,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.nn_mnist" />
         <item itemvalue="Python.nn_iris" />
+        <item itemvalue="Python.nn_mnist" />
       </list>
     </recent_temporary>
   </component>

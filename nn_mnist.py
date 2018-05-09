@@ -112,9 +112,8 @@ print("")
 print("¡La fase de entrenamiento ha terminado!")
 print("----------------------------------------------------------------------------------")
 print("")
-print("Empezando la fase de test...")
+print("Fase de test")
 print("")
-time.sleep(10)
 
 done = 0
 

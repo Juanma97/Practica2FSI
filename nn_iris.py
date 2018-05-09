@@ -96,22 +96,20 @@ while finish:
 
 print("")
 print("¡La fase de entrenamiento ha terminado!")
-print("Empezando la fase de test...")
+print("Fase de test")
 print("")
-time.sleep(10)
 
-
-ciclosTest = 0
+epochTest = 0
 
 batch_xs = x_data[(len(x_data) - 1) - int(len(x_data) * 0.15): len(x_data)]  # x_data[127 : 150]
 batch_ys = y_data[(len(x_data) - 1) - int(len(x_data) * 0.15): len(x_data)]  # y_data[127 : 150]
-ciclosTest += 1
+epochTest += 1
 
 actualError = sess.run(loss, feed_dict={x: batch_xs, y_: batch_ys})
-print("Test:", ciclosTest, "Error:", actualError)
+print("Test:", epochTest, "Error:", actualError)
 result = sess.run(y, feed_dict={x: batch_xs})
-muestra = 1
+sample = 1
 for b, r in zip(batch_ys, result):
-    print(muestra, ".-", b, "-->", r)
-    muestra += 1
+    print(sample, ".-", b, "-->", r)
+    sample += 1
 print("----------------------------------------------------------------------------------")
