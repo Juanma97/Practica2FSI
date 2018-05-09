@@ -4,7 +4,6 @@ from random import randint
 import time
 import tensorflow as tf
 import numpy as np
-#importamos tenso flow
 
 # Translate a list of labels into an array of 0's and one 1.
 # i.e.: 4 -> [0,0,0,0,1,0,0,0,0,0]

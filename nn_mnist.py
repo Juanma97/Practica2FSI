@@ -81,23 +81,23 @@ error = []
 
 while finish:
     for jj in range(int(len(train_x) / batch_size)):
-        # Fase de entrenamiento
+        # Entrenamiento
         batch_xs = train_x[jj * batch_size: jj * batch_size + batch_size]
         batch_ys = train_y[jj * batch_size: jj * batch_size + batch_size]
         sess.run(train, feed_dict={x: batch_xs, y_: batch_ys})
 
-    # Fase de validacion
+    # Validacion
     actualError = sess.run(loss, feed_dict={x: valid_x, y_: valid_y})
     error.append(actualError)
 
     epoch = epoch + 1
     if actualError >= lastError:
         check += 1
-        if check > 6 :
+        if check > 6:
             finish = False
-            print ("********** Fin del entrenamiento **********")
-            print ("-Error anterior: " + str(lastError))
-            print ("-Error actual: " + str(actualError))
+            print("********** Fin del entrenamiento **********")
+            print("-Error anterior: " + str(lastError))
+            print("-Error actual: " + str(actualError))
             break
     else:
         check = 0
@@ -116,19 +116,18 @@ print("Empezando la fase de test...")
 print("")
 time.sleep(10)
 
-aciertos = 0
+done = 0
 
 result = sess.run(y, feed_dict={x: test_x})
 
 print("Test", "Error:", sess.run(loss, feed_dict={x: test_x, y_: test_y}))
 
-j = 0
 for b, r in zip(test_y, result):
     if np.argmax(b) == np.argmax(r):
-        aciertos += 1
+        done += 1
 
 
-print("Porcentaje de aciertos: " + str(aciertos/float(len(test_y))*100) + "%")
+print("Porcentaje de aciertos: " + str(done / float(len(test_y)) * 100) + "%")
 plt.plot(error)
 plt.ylabel("ERROR")
 plt.show()
