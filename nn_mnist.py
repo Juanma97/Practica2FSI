@@ -109,7 +109,7 @@ while finish:
     print("----------------------------------------------------------------------------------")
 
 print("")
-print("¡La fase de entrenamiento ha terminado!")
+print("Entrenamiento acabado")
 print("----------------------------------------------------------------------------------")
 print("")
 print("Fase de test")
